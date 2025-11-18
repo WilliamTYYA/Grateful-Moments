@@ -6,13 +6,17 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct GratefulMomentsApp: App {
+    let dataContainer = DataContainer()
+    
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-            MomentEntryView()
+            ContentView()
+                .environment(dataContainer)
         }
+        .modelContainer(dataContainer.modelContainer)
     }
 }
