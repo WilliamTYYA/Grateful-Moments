@@ -24,7 +24,6 @@ class Moment {
         self.timestamp = timestamp
     }
     
-    
     var image: UIImage? {
         imageData.flatMap {
             UIImage(data: $0)
@@ -37,7 +36,6 @@ extension Moment {
     static let sample = sampleData[0]
     static let longTextSample = sampleData[1]
     static let imageSample = sampleData[4]
-    
     
     static let sampleData = [
         Moment(
